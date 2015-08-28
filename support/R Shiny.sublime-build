@@ -1,0 +1,6 @@
+{
+    "selector": "source.r",
+    "working_dir": "${project_path:${folder}}",
+    "cmd": [ "Rscript -e \"library(methods); shiny::runApp('${project_path:${folder}}', launch.browser = TRUE)\"" ] ,
+    "shell": true
+}

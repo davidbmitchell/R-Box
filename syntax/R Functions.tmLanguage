@@ -270,6 +270,50 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\b(absolutePanel|actionButton|actionLink|addResourcePath|animationOptions|as\.shiny.appobj|basicPage|bootstrapPage|brushedPoints|brushOpts|checkboxGroupInput|checkboxInput|clickOpts|code|column|conditionalPanel|createWebDependency|dataTableOutput|dateInput|dateRangeInput|dblclickOpts|div|downloadButton|downloadHandler|downloadLink|eventReactive|exprToFunction|fileInput|fixedPage|fixedPanel|fixedRow|flowLayout|fluidPage|fluidRow|getDefaultReactiveDomain|headerPanel|helpText|hoverOpts|HTML|htmlOutput|icon|imageOutput|img|includeCSS|includeHTML|includeMarkdown|includeScript|includeText|incProgress|inputPanel|installExprFunction|invalidateLater|is\.reactive|is\.reactivevalues|is\.shiny.appobj|is\.singleton|isolate|knit_print\.html|knit_print\.shiny.appobj|knit_print\.shiny.render.function|knit_print\.shiny.tag|knit_print\.shiny.tag.list|mainPanel|makeReactiveBinding|markRenderFunction|maskReactiveContext|navbarMenu|navbarPage|navlistPanel|nearPoints|need|numericInput|observe|observeEvent|onReactiveDomainEnded|outputOptions|pageWithSidebar|parseQueryString|passwordInput|plotOutput|plotPNG|pre|radioButtons|reactive|reactiveFileReader|reactivePlot|reactivePoll|reactivePrint|reactiveTable|reactiveText|reactiveTimer|reactiveUI|reactiveValues|reactiveValuesToList|registerInputHandler|removeInputHandler|renderDataTable|renderImage|renderPlot|renderPrint|renderTable|renderText|renderUI|repeatable|runApp|runExample|runGist|runGitHub|runUrl|selectInput|selectizeInput|serverInfo|setProgress|shinyApp|shinyAppDir|shinyServer|shinyUI|showReactLog|sidebarLayout|sidebarPanel|singleton|sliderInput|span|splitLayout|stopApp|strong|submitButton|tableOutput|tabPanel|tabsetPanel|tag|tagAppendAttributes|tagAppendChild|tagAppendChildren|tagList|tagSetChildren|textInput|textOutput|titlePanel|uiOutput|updateCheckboxGroupInput|updateCheckboxInput|updateDateInput|updateDateRangeInput|updateNavbarPage|updateNavlistPanel|updateNumericInput|updateRadioButtons|updateSelectInput|updateSelectizeInput|updateSliderInput|updateTabsetPanel|updateTextInput|validate|validateCssUnit|verbatimTextOutput|verticalLayout|wellPanel|withMathJax|withProgress|withReactiveDomain|withTags)\s*(\()</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.function.r</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.r</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>base</string>
+			<key>contentName</key>
+			<string>meta.function-call.arguments.r</string>
+			<key>end</key>
+			<string>(\))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.parameters.r</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.function-call.r</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function-call-parameter</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.r</string>
+				</dict>
+			</array>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
